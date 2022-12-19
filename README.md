@@ -98,7 +98,7 @@ Data and system output format details can be found from [data/README.md](data/RE
 
 Please feel free to contact: seokhwk (at) amazon (dot) com
 
-### License
+## License
 
 The code is licensed under Apache 2.0 (see [SOFTWARELICENSE](SOFTWARELICENSE)) and the data files are licensed under CDLA-Sharing 1.0 (see [DATALICENSE](DATALICENSE)).
 
