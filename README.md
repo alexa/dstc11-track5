@@ -76,7 +76,7 @@ Data and system output format details can be found from [data/README.md](data/RE
 * Test data released: Mar 24, 2023
 * Entry submission deadline: Mar 31, 2023
 * Objective evaluation completed: Apr 3, 2023
-* Human evaluation completed: Apr 10, 2020
+* Human evaluation completed: Apr 10, 2023
 
 ## Rules
 
