@@ -9,7 +9,7 @@ This directory contains the official baseline codes for [DSTC11 Track 5](../READ
 * Clone this repository into your working directory.
 
 ``` shell
-$ git clone [ADDRESS_TO_BE_CONFIRMED]
+$ git clone https://github.com/alexa/dstc11-track5.git
 $ cd dstc11-track5
 ```
 
