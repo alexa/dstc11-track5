@@ -1,0 +1,34 @@
+{
+  "dataset_args": {
+    "n_candidates": 2,
+    "eval_all_snippets": false,
+    "negative_sample_method": "oracle",
+
+    "history_max_utterances": 1000000,
+    "history_max_tokens": 256,
+    "knowledge_max_tokens": 256,
+
+    "eval_threshold": 0
+  },
+
+  "task": "selection",
+  "model_name_or_path": "microsoft/deberta-v3-base",
+
+  "per_gpu_train_batch_size": 4,
+  "per_gpu_eval_batch_size": 1,
+  "gradient_accumulation_steps": 16,
+  "max_candidates_per_forward_train": 4,
+  "max_candidates_per_forward_eval": 16,
+  
+  "learning_rate": 3e-5,
+  "adam_epsilon": 1e-8,
+  "max_grad_norm": 1.0,
+
+  "num_train_epochs": 3,
+  "warmup_steps": 500,
+
+  "fp16": "",
+
+  "seed": 42
+}
+

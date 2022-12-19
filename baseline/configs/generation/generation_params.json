@@ -1,0 +1,6 @@
+{ 
+  "do_sample": true,
+  "min_length": 5,
+  "max_length": 60,
+  "num_beams": 5
+}

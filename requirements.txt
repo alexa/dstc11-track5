@@ -1,0 +1,12 @@
+nltk==3.6.5
+numpy==1.20.3
+rouge_score==0.1.2
+scikit_learn==1.1.1
+sentencepiece==0.1.96
+strsimpy==0.2.1
+summ_eval==0.892
+tensorboard==2.9.0
+tensorboardX==2.5
+torch==1.11.0
+tqdm==4.62.3
+transformers==4.20.1

@@ -1,0 +1,40 @@
+{
+    "$schema": "http://json-schema.org/draft/2019-09/schema#",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "target": {"type": "boolean"}
+        },
+        "required": ["target"],
+        "if": {
+            "properties": {"target": {"const": true}}
+        },
+        "then": {
+            "properties": {
+                "knowledge": {
+                    "type": "array",
+                     "items": {
+                        "type": "object",
+                        "properties": {
+                            "domain": {
+                                "type": "string",
+                                "enum": ["hotel", "restaurant"]
+                            },
+                            "entity_id": {"type": "integer"},
+                            "doc_type": {
+                                "type": "string",
+                                "enum": ["review", "faq"]
+                            },
+                            "doc_id": {"type": "integer"},
+                            "sent_id": {"type": "integer"}
+                        },
+                        "required": ["domain", "entity_id", "doc_type", "doc_id"]
+                    }
+                },
+                "response": {"type": "string", "minLength": 1}
+            },
+            "required": ["knowledge", "response"]
+        }
+    }
+}
