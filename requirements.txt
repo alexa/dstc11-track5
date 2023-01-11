@@ -1,5 +1,5 @@
 nltk==3.6.6
-numpy==1.20.3
+numpy==1.22.0
 rouge_score==0.1.2
 scikit_learn==1.1.1
 sentencepiece==0.1.96
