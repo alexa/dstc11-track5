@@ -7,7 +7,7 @@ class DatasetWalker(object):
     def __init__(self, dataset, dataroot, labels=False, labels_file=None, incl_knowledge=False):
         path = os.path.join(os.path.abspath(dataroot))
             
-        if dataset not in ['train', 'val']:
+        if dataset not in ['train', 'val', 'test']:
             raise ValueError('Wrong dataset name: %s' % (dataset))
 
         logs_file = os.path.join(path, dataset, 'logs.json')

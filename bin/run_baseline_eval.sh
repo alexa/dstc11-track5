@@ -18,6 +18,7 @@ CUDA_VISIBLE_DEVICES=${cuda_id} python baseline.py \
         --checkpoint ${checkpoint} \
         --dataroot data \
         --eval_dataset ${eval_dataset} \
+	--no_labels \
         --knowledge_file knowledge.json \
         --output_file ${td_output_file}
 
