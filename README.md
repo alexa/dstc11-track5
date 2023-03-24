@@ -7,11 +7,15 @@ Track participants will develop dialogue systems to understand relevant review p
 
 **Organizers:** Seokhwan Kim, Spandana Gella, Chao Zhao, Di Jin, Alexandros Papangelis, Behnam Hedayatnia, Yang Liu, Dilek Hakkani-Tur
 
+## News
+* **March 24, 2023** - The evaluation data is released. Please find the details from [data/](data/README.md).
+
 ## Important Links
 * [Track Proposal](https://drive.google.com/file/d/1wHZdlz8JecDWiiJiwhP3VsKnbApdL6_e/view)
 * [Challenge Registration](https://forms.gle/e2qVGPPAhpp8Upt8A)
 * [Data Formats](data/README.md)
 * [Baseline Details](baseline/README.md)
+* [Entry Submission](https://forms.gle/xGnM3iZXn9ZgJT2W9)
 
 ## Tasks
 
