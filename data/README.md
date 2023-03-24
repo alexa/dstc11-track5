@@ -4,7 +4,7 @@ This directory contains the official training/validation datasets for [DSTC11 Tr
 
 ## Data
 
-We are releasing the data divided into the following two subsets:
+We are releasing the data divided into the following three subsets:
 
 * Training set
   * [logs.json](train/logs.json): training instances
@@ -14,10 +14,25 @@ We are releasing the data divided into the following two subsets:
   * [labels.json](val/labels.json): ground-truths for validation instances
 * Test set:
   * [logs.json](test/logs.json): test instances
+  * labels.json: ground-truths for test instances (to be released later)
 
 The ground-truth labels for Knowledge Selection task refer to the knowledge snippets in [knowledge.json](knowledge.json).
 
 Participants will develop systems to take *logs.json* as an input and generates outputs following the **same format** as *labels.json*.
+
+## Participation
+
+Each participating team will submit **up to 5** system outputs for the test instances in [logs.json](test/logs.json).
+
+The system outputs must follow the **same format** as [labels.json](README.md#label-objects) for the training/validation sets.
+Before making your submission, please double check if every file is valid with no error from the following script:
+``` shell
+$ python -m scripts.check_results --dataset test --dataroot data/ --outfile [YOUR_SYSTEM_OUTPUT_FILE]
+Found no errors, output file is valid
+```
+Any invalid submission will be excluded from the official evaluation.
+
+Once you're ready, please make your submission by completing the **[Submission Form](https://forms.gle/xGnM3iZXn9ZgJT2W9)** by 11:59PM UTC-12 (anywhere on Earth), March 31, 2023.
 
 ## JSON Data Formats
 
