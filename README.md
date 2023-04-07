@@ -8,6 +8,7 @@ Track participants will develop dialogue systems to understand relevant review p
 **Organizers:** Seokhwan Kim, Spandana Gella, Chao Zhao, Di Jin, Alexandros Papangelis, Behnam Hedayatnia, Yang Liu, Dilek Hakkani-Tur
 
 ## News
+* **April 7, 2023** - The objective evaluation results are now available: [See Results](https://docs.google.com/spreadsheets/d/1cgUWr6h2PHvZa1Ez0bLhInkQbO-GCp9RJtUbTumdjoY/edit?usp=sharing).
 * **March 24, 2023** - The evaluation data is released. Please find the data and participation details from [data/](data/README.md).
 
 ## Important Links
@@ -15,7 +16,7 @@ Track participants will develop dialogue systems to understand relevant review p
 * [Challenge Registration](https://forms.gle/e2qVGPPAhpp8Upt8A)
 * [Data Formats](data/README.md)
 * [Baseline Details](baseline/README.md)
-* [Entry Submission Form](https://forms.gle/xGnM3iZXn9ZgJT2W9)
+* [Objective Evaluation Results](https://docs.google.com/spreadsheets/d/1cgUWr6h2PHvZa1Ez0bLhInkQbO-GCp9RJtUbTumdjoY/edit?usp=sharing)
 
 ## Tasks
 
