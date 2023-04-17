@@ -1,0 +1,20 @@
+{
+  "subtask1": {
+    "ensemble": "Yes, multiple model outputs were combined for the turn detection",
+    "pretrained": "DeBERTa-base or DeBERTa-large",
+    "external_api": "Did not use",
+    "desc": "Following the baseline setting, using DeBERTa-base or DeBERTa-large"
+  },
+  "subtask2": {
+    "ensemble": "Yes, multiple model outputs were combined for the knowledge selection",
+    "pretrained": "DeBERTa-base or DeBERTa-large",
+    "external_api": "Did not use",
+    "desc": "Following the baseline setting, using DeBERTa-base or DeBERTa-large"
+  },
+  "subtask3": {
+    "ensemble": "No, only a single model was used for the response generation",
+    "pretrained": "T5-large",
+    "external_api": "Did not use",
+    "desc": "Following the baseline setting, using T5-large"
+  }
+}

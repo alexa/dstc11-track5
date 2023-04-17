@@ -1,0 +1,20 @@
+{
+  "subtask1": {
+    "ensemble": "No, only a single model was used for the turn detection",
+    "pretrained": "baseline",
+    "external_api": "no",
+    "desc": "baseline"
+  },
+  "subtask2": {
+    "ensemble": "No, only a single model was used for the knowledge selection",
+    "pretrained": "baseline",
+    "external_api": "expanded knowledge.json using chatGPT",
+    "desc": "baseline + expanded knowledge.json"
+  },
+  "subtask3": {
+    "ensemble": "No, only a single model was used for the response generation",
+    "pretrained": "flan-t5-large",
+    "external_api": "no",
+    "desc": "We do post-processing on the output, adding a the most frequent question from the training set as follow-up question to each review summary. "
+  }
+}

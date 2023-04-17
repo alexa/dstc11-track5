@@ -1,0 +1,20 @@
+{
+  "subtask1": {
+    "ensemble": "No, only a single model was used for the turn detection",
+    "pretrained": "microsoft/deberta-v3-large",
+    "external_api": "No",
+    "desc": "as same as baseline"
+  },
+  "subtask2": {
+    "ensemble": "Yes, multiple model outputs were combined for the knowledge selection",
+    "pretrained": "microsoft/deberta-v3-base, microsoft/deberta-v3-large, decapoda-research/llama-7b-hf, chavinlo/alpaca-native",
+    "external_api": "No",
+    "desc": "hierarchy negative sample selection, promt tuning for llama and alpaca"
+  },
+  "subtask3": {
+    "ensemble": "No, only a single model was used for the response generation",
+    "pretrained": "allenai/PRIMERA, chavinlo/alpaca-native",
+    "external_api": "No",
+    "desc": "Conditional generation with PRIMERA on dialogue and knowledge, add normal question by alpaca."
+  }
+}

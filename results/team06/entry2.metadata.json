@@ -1,0 +1,20 @@
+{
+  "subtask1": {
+    "ensemble": "No, only a single model was used for the turn detection",
+    "pretrained": "deberta-v3-large",
+    "external_api": "No",
+    "desc": "We formulate this problem as a binary classification problem and use BCE loss to fine-tune the pre-training model."
+  },
+  "subtask2": {
+    "ensemble": "Yes, multiple model outputs were combined for the knowledge selection",
+    "pretrained": "bert-large-uncased;deberta-v3-large;electra-large-discriminator;xlm-roberta-large;xlnet-large-cased",
+    "external_api": "No",
+    "desc": "We fine-tune different pre-training models on the training set and ensemble the final result of different model outputs. Finally, the best knowledge selection threshold is selected by evaluating the ensemble result on the validation set."
+  },
+  "subtask3": {
+    "ensemble": "Yes, multiple model outputs were combined for the response generation",
+    "pretrained": "bart-large",
+    "external_api": "No",
+    "desc": "The output of the knowledge selection model of every single model is input to each dialogue generation model respectively. The dialogue generation model generates different outputs according to different knowledge inputs. The final result is obtained by a model ensemble of all these generated outputs."
+  }
+}

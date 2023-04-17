@@ -1,0 +1,20 @@
+{
+  "subtask1": {
+    "ensemble": "No, only a single model was used for the turn detection",
+    "pretrained": "deberta-v3-base",
+    "external_api": "no",
+    "desc": "The settings are consistent with baseliney"
+  },
+  "subtask2": {
+    "ensemble": "No, only a single model was used for the knowledge selection",
+    "pretrained": "deberta-v3-base",
+    "external_api": "no",
+    "desc": "deberta-v3-base"
+  },
+  "subtask3": {
+    "ensemble": "No, only a single model was used for the response generation",
+    "pretrained": "bart-base",
+    "external_api": "no",
+    "desc": "We used the prompt method to try to improve on top of baseline."
+  }
+}

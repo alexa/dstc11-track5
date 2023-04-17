@@ -1,0 +1,20 @@
+{
+  "subtask1": {
+    "ensemble": "No, only a single model was used for the turn detection",
+    "pretrained": "microsoft/deberta-v3-large",
+    "external_api": "not used",
+    "desc": "baseline method itself, but used \u2018DeBERTa-v3-large\u2019"
+  },
+  "subtask2": {
+    "ensemble": "No, only a single model was used for the knowledge selection",
+    "pretrained": "google/bigbird-roberta-base",
+    "external_api": "not used",
+    "desc": "The key idea of our model is that relationships between knowledges can provide useful information for selecting relevant knowledges. Because inputting knowledge one by one like baseline models prevents the model from reflecting the relationships between them. So, we  designed the model encoder to be able to input a whole snippet of knowledge at once. Specifically, we used the pre-trained BigBird encoder.\n\nOur model consists of a Query Encoder that encodes dialogue history and a Knowledge Encoder followed by a Transformer encoder that encodes knowledge snippets. \n\nInitialize Query Encoder with DPR trained Query Encoder: First, we trained Query Encoder(BirBird Encoder) using DPR\u2019s training procedure. In detail, per each last utterance from dialogue history we select a positive sample with the same task2\u2019s gold label. By this training step, make a query encoder to represent similar semantics(e.g., \u201cDo they sell alcohol there?\u201d,  \u201cDoes the store sell alcohol?\u201d) as similar dense vectors. After this DPR\u2019s training step, we initalized our Task2 Model\u2019s Query Encoder with the DPR trained Query Encoder.\n\nIn the forward step of our model, we perform scaled dot-product attention between the encoded [CLS] token of the Query Encoder and the encoded [CLS] tokens of the Knowledge Encoder to reflect the relationships between the two. We then use self-attention among the Knowledge Encoder\u2019s output representations with the Transformer Encoder to learn the relationships between knowledge snippets.\n\nAdditionally, inspired by inception model, 1D CNN layers with kernel sizes of 1, 3, and 5 are applied to the last knowledge [CLS] representation to reflect the relationships between neighboring knowledge snippets once more.\n\nFinally, we concatenate the Query representation and Knowledge representation and input them to a feedforward classification head to compute the final selection as a classification task."
+  },
+  "subtask3": {
+    "ensemble": "No, only a single model was used for the response generation",
+    "pretrained": "google/longt5-tglobal-base",
+    "external_api": "not used",
+    "desc": "The main idea of our model is to utilize knowledge as much as possible when generating a response, in order to ensure that no relevant information is missed. To achieve this, our model uses the LongT5 to incorporate a larger amount of knowledge. The model's encoder uses the knowledge encoder trained in task2. \n\nSpecifically, each knowledge is truncated using a length ratio to ensure that all knowledge is included in the model's input. The model also truncates the dialogue history from the back, as the latter sentence is generally more important for generating a response than the former."
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "subtask1": {
+    "ensemble": "No, only a single model was used for the turn detection",
+    "pretrained": "Flan-t5 small",
+    "external_api": "not used",
+    "desc": "multitask model was used"
+  },
+  "subtask2": {
+    "ensemble": "No, only a single model was used for the knowledge selection",
+    "pretrained": "Flan-t5 small",
+    "external_api": "not used",
+    "desc": "multitask model was used"
+  },
+  "subtask3": {
+    "ensemble": "No, only a single model was used for the response generation",
+    "pretrained": "Flan-t5 small",
+    "external_api": "not used",
+    "desc": "multitask model was used"
+  }
+}

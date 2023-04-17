@@ -1,0 +1,20 @@
+{
+  "subtask1": {
+    "ensemble": "No, only a single model was used for the turn detection",
+    "pretrained": "deberta-v3-base",
+    "external_api": "None",
+    "desc": "same as baseline"
+  },
+  "subtask2": {
+    "ensemble": "No, only a single model was used for the knowledge selection",
+    "pretrained": "deberta-v3-large",
+    "external_api": "None",
+    "desc": "pipeline system with entity matching and knowledge selection. The rule-based model and the neural model work complementarily."
+  },
+  "subtask3": {
+    "ensemble": "No, only a single model was used for the response generation",
+    "pretrained": "t5-large",
+    "external_api": "InstructGPT",
+    "desc": "Data augmentation to generate mixed reviews / explicitly included a label in the input that indicates whether the reviews are mixed or not"
+  }
+}

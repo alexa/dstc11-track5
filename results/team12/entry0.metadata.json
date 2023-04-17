@@ -1,0 +1,20 @@
+{
+  "subtask1": {
+    "ensemble": "No, only a single model was used for the turn detection",
+    "pretrained": "deberta-v3-base",
+    "external_api": "no",
+    "desc": "deberta-v3-base baseline"
+  },
+  "subtask2": {
+    "ensemble": "No, only a single model was used for the knowledge selection",
+    "pretrained": "deberta-v3-base",
+    "external_api": "yes, Open AI's GPT APIs",
+    "desc": "I created an expected question and review and put the input together."
+  },
+  "subtask3": {
+    "ensemble": "No, only a single model was used for the response generation",
+    "pretrained": "facebook/bart-base",
+    "external_api": "no",
+    "desc": "facebook/bart-base "
+  }
+}

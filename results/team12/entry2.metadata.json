@@ -1,0 +1,20 @@
+{
+  "subtask1": {
+    "ensemble": "No, only a single model was used for the turn detection",
+    "pretrained": "microsoft/deberta-v3-base",
+    "external_api": "no",
+    "desc": "microsoft/deberta-v3-base"
+  },
+  "subtask2": {
+    "ensemble": "No, only a single model was used for the knowledge selection",
+    "pretrained": "microsoft/deberta-v3-base",
+    "external_api": "no",
+    "desc": "microsoft/deberta-v3-base"
+  },
+  "subtask3": {
+    "ensemble": "No, only a single model was used for the response generation",
+    "pretrained": "flan_t5",
+    "external_api": "no",
+    "desc": "flan_t5"
+  }
+}

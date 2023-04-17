@@ -1,0 +1,20 @@
+{
+  "subtask1": {
+    "ensemble": "No, only a single model was used for the turn detection",
+    "pretrained": "deberta-v3-large",
+    "external_api": "No",
+    "desc": "We formulate this problem as a binary classification problem and use BCE loss to fine-tune the pre-training model."
+  },
+  "subtask2": {
+    "ensemble": "Yes, multiple model outputs were combined for the knowledge selection",
+    "pretrained": "bert-large-uncased;deberta-v3-large;electra-large-discriminator;xlm-roberta-large;xlnet-large-cased",
+    "external_api": "No",
+    "desc": "We fine-tune different pre-training models on the training set and ensemble the final result of different model outputs. Finally, the knowledge selection threshold is selected by averaging the optimal threshold  of different pre-training models  on the validation set."
+  },
+  "subtask3": {
+    "ensemble": "Yes, multiple model outputs were combined for the response generation",
+    "pretrained": "bart-large",
+    "external_api": "No",
+    "desc": "We fine-tune bart-large model on the training set. The final submission is obtained by an ensemble of the result of different model outputs using different random seeds."
+  }
+}

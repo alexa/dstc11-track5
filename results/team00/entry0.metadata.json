@@ -1,0 +1,20 @@
+{
+  "subtask1": {
+    "ensemble": "No, only a single model was used for the turn detection",
+    "pretrained": "DeBERTa-V3-base",
+    "external_api": "No",
+    "desc": "Baseline"
+  },
+  "subtask2": {
+    "ensemble": "No, only a single model was used for the knowledge selection",
+    "pretrained": "DeBERTa-V3-base",
+    "external_api": "No",
+    "desc": "Baseline"
+  },
+  "subtask3": {
+    "ensemble": "No, only a single model was used for the response generation",
+    "pretrained": "BART-base",
+    "external_api": "No",
+    "desc": "Baseline"
+  }
+}

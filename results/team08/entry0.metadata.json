@@ -1,0 +1,20 @@
+{
+  "subtask1": {
+    "ensemble": "No, only a single model was used for the turn detection",
+    "pretrained": "deberta-v3-large",
+    "external_api": "None",
+    "desc": "Data augmentation(Contextual word embedding, Back translation)"
+  },
+  "subtask2": {
+    "ensemble": "No, only a single model was used for the knowledge selection",
+    "pretrained": "deberta-v3-large",
+    "external_api": "None",
+    "desc": "Data augmentation(Contextual word embedding, Back translation)"
+  },
+  "subtask3": {
+    "ensemble": "No, only a single model was used for the response generation",
+    "pretrained": "bart-large",
+    "external_api": "None",
+    "desc": "Data augmentation(Contextual word embedding, Back translation)"
+  }
+}

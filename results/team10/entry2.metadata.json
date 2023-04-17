@@ -1,0 +1,20 @@
+{
+  "subtask1": {
+    "ensemble": "No, only a single model was used for the turn detection",
+    "pretrained": "baseline",
+    "external_api": "no",
+    "desc": "baseline"
+  },
+  "subtask2": {
+    "ensemble": "No, only a single model was used for the knowledge selection",
+    "pretrained": "baseline",
+    "external_api": "no",
+    "desc": "baseline"
+  },
+  "subtask3": {
+    "ensemble": "No, only a single model was used for the response generation",
+    "pretrained": "-",
+    "external_api": "Open AI's chatGPT API",
+    "desc": "We prompted chatGPT with step-by-step instructions, to first generate a summary of the knowledge and then append a follow up question given the dialogue history. We provided three examples, selected from the most challenging cases in the training data according to the data trends on the validation set. Unfortunately, due to server problems, the data samples after 4500, are lacking a review summary."
+  }
+}

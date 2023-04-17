@@ -1,0 +1,20 @@
+{
+  "subtask1": {
+    "ensemble": "No, only a single model was used for the turn detection",
+    "pretrained": "microsoft/deberta-v3-base",
+    "external_api": "X",
+    "desc": "same as baseline"
+  },
+  "subtask2": {
+    "ensemble": "No, only a single model was used for the knowledge selection",
+    "pretrained": "We used microsoft/deberta-v3-base to build the model. Also for augmentation we did back translation for augmentation, and used Translation models from huggingface opus-mt-{src}-{tgt} models. We used, ch,da,sp,de,ben,fi,hu,hi,ko,tl translation model",
+    "external_api": "No",
+    "desc": "For the robust training. We augmented data user utterances with back translation. We carefully curated the language set to contain the diverse typology. (language family, SVO, SOV etc..)"
+  },
+  "subtask3": {
+    "ensemble": "No, only a single model was used for the response generation",
+    "pretrained": "facebook/bart-base",
+    "external_api": "x",
+    "desc": "same as baseline"
+  }
+}
