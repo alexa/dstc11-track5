@@ -10,6 +10,7 @@ Track participants will develop dialogue systems to understand relevant review p
 ## News
 * **April 17, 2023** - The human evaluation scores for each finalist entry are released at [results/](results/).
 * **April 17, 2023** - The system outputs submitted by the participants are released at [results/](results/).
+* **April 17, 2023** - The ground-truth labels/responses for the evaluation data are released at [data/test/labels.json](data/test/labels.json). 
 * **April 13, 2023** - The human evaluation results are now available: [See Results](https://docs.google.com/spreadsheets/d/1cgUWr6h2PHvZa1Ez0bLhInkQbO-GCp9RJtUbTumdjoY/edit?usp=sharing).
 * **April 7, 2023** - The objective evaluation results are now available: [See Results](https://docs.google.com/spreadsheets/d/1cgUWr6h2PHvZa1Ez0bLhInkQbO-GCp9RJtUbTumdjoY/edit?usp=sharing).
 * **March 24, 2023** - The evaluation data is released. Please find the data and participation details from [data/](data/README.md).
