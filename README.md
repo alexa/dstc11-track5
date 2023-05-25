@@ -21,6 +21,19 @@ Track participants will develop dialogue systems to understand relevant review p
 * [Data Formats](data/README.md)
 * [Baseline Details](baseline/README.md)
 * [Objective Evaluation Results](https://docs.google.com/spreadsheets/d/1cgUWr6h2PHvZa1Ez0bLhInkQbO-GCp9RJtUbTumdjoY/edit?usp=sharing)
+* [Human Evaluation Results](https://docs.google.com/spreadsheets/d/1cgUWr6h2PHvZa1Ez0bLhInkQbO-GCp9RJtUbTumdjoY/edit?usp=sharing)
+
+If you want to publish experimental results with this dataset or use the baseline models, please cite [this article](https://arxiv.org/abs/2305.12091):
+```
+@misc{zhao2023what,
+      title={"What do others think?": Task-Oriented Conversational Modeling with Subjective Knowledge}, 
+      author={Chao Zhao and Spandana Gella and Seokhwan Kim and Di Jin and Devamanyu Hazarika and Alexandros Papangelis and Behnam Hedayatnia and Mahdi Namazifar and Yang Liu and Dilek Hakkani-Tur},
+      year={2023},
+      eprint={2305.12091},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+```
 
 ## Tasks
 
