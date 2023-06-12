@@ -9,4 +9,4 @@ tensorboard==2.9.0
 tensorboardX==2.5
 torch==1.13.1
 tqdm==4.62.3
-transformers==4.20.1
+transformers==4.30.0
